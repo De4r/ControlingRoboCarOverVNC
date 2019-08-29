@@ -1,3 +1,9 @@
+#include <iostream>
+#include <wiringPi.h>
+#include <pigpio.h>
+#include <stdio.h>
+#include <ncurses.h>
+
 #include "Car.h"
 
 void Car::updatePWM()
@@ -10,35 +16,25 @@ void Car::driveForward()
 {
 	// Set In pins to proper levels
 	updatePWM();
-	gpioWrite(inLeft1, 1);
-	gpioWrite(inLeft2, 0);
+	gpioWrite(inLeft1, 0);
+	gpioWrite(inLeft2, 1);
 
-	gpioWrite(inRight3, 0);
-	gpioWrite(inRight4, 1);
+	gpioWrite(inRight3, 1);
+	gpioWrite(inRight4, 0);
 }
 
 void Car::driveBackward()
 {
 	// Set In pins to proper levels
 	updatePWM();
-	gpioWrite(inLeft1, 0);
-	gpioWrite(inLeft2, 1);
-
-	gpioWrite(inRight3, 1);
-	gpioWrite(inRight4, 0);
-}
-
-void Car::turnLeft()
-{
-	// Set In pins to proper levels
-	updatePWM();
-	gpioWrite(inLeft1, 0);
-	gpioWrite(inLeft2, 1);
+	gpioWrite(inLeft1, 1);
+	gpioWrite(inLeft2, 0);
 
 	gpioWrite(inRight3, 0);
 	gpioWrite(inRight4, 1);
 }
-void Car::turnRight()
+
+void Car::turnLeft()
 {
 	// Set In pins to proper levels
 	updatePWM();
@@ -47,6 +43,16 @@ void Car::turnRight()
 
 	gpioWrite(inRight3, 1);
 	gpioWrite(inRight4, 0);
+}
+void Car::turnRight()
+{
+	// Set In pins to proper levels
+	updatePWM();
+	gpioWrite(inLeft1, 0);
+	gpioWrite(inLeft2, 1);
+
+	gpioWrite(inRight3, 0);
+	gpioWrite(inRight4, 1);
 }
 void Car::stopCar()
 {

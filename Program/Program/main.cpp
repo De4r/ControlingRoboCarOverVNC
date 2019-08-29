@@ -1,3 +1,9 @@
+#include <iostream>
+#include <wiringPi.h>
+#include <pigpio.h>
+#include <stdio.h>
+#include <ncurses.h>
+
 #include "Car.h"
 
 using namespace std;

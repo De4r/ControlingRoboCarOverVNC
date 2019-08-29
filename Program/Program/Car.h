@@ -1,4 +1,4 @@
-#pragma once
+
 #include <iostream>
 #include <wiringPi.h>
 #include <pigpio.h>
@@ -55,4 +55,4 @@ public:
 	void updatePinStatus();
 	Car();
 	~Car();
-}
+};
