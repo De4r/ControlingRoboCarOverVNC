@@ -36,6 +36,8 @@ private:
 	
 	// Flags
 	bool errorFlag = 0;
+	bool collisionFlag = 0;
+	void updatePins();
 
 
 public:
@@ -52,7 +54,6 @@ public:
 	void setSonarPins(unsigned char rearTrig, unsigned char frontTrig, unsigned char rearEcho, unsigned char frontEcho);
 	void setInfraSensorPins(unsigned char rearLEftInfra, unsigned char rearRightInfra, unsigned char frontLeftInfra, unsigned char frontRightInfra);
 	void setEncoderPins(unsigned char leftEncoder, unsigned char rightEncoder);
-	void updatePinStatus();
 	Car();
 	~Car();
 };

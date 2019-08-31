@@ -15,16 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="mian.cpp">
+    <ClInclude Include="Car.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
     <ClCompile Include="Car.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Car.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

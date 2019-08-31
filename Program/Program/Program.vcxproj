@@ -18,6 +18,13 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Car.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Car.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{3174CD0B-E192-4A9D-A5B6-835D19C8EC2A}</ProjectGuid>
@@ -122,13 +129,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Car.cpp" />
-    <ClCompile Include="mian.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Car.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

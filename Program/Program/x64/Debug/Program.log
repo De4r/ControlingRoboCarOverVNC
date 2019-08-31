@@ -1,0 +1,5 @@
+﻿  Car.cpp
+  main.cpp
+D:\ControlingRoboCarOverVNC\Program\Program\Car.cpp(2,10): error C1083:  Nie można otworzyć pliku dołącz: 'wiringPi.h': No such file or directory
+  Generowanie kodu...
+D:\ControlingRoboCarOverVNC\Program\Program\main.cpp(2,10): error C1083:  Nie można otworzyć pliku dołącz: 'wiringPi.h': No such file or directory
