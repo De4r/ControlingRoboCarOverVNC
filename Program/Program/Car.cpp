@@ -42,11 +42,11 @@ void Car::turnLeft()
 {
 	// Set In pins to proper levels
 	updatePWM();
-	gpioWrite(inLeft1, 1);
-	gpioWrite(inLeft2, 0);
+	gpioWrite(inLeft1, 0);
+	gpioWrite(inLeft2, 1);
 
-	gpioWrite(inRight3, 1);
-	gpioWrite(inRight4, 0);
+	gpioWrite(inRight3, 0);
+	gpioWrite(inRight4, 1);
 }
 
 // Trun right inplace
@@ -54,11 +54,11 @@ void Car::turnRight()
 {
 	// Set In pins to proper levels
 	updatePWM();
-	gpioWrite(inLeft1, 0);
-	gpioWrite(inLeft2, 1);
+	gpioWrite(inLeft1, 1);
+	gpioWrite(inLeft2, 0);
 
-	gpioWrite(inRight3, 0);
-	gpioWrite(inRight4, 1);
+	gpioWrite(inRight3, 1);
+	gpioWrite(inRight4, 0);
 }
 
 // Stoping the car by slowing, smoothly stops.
